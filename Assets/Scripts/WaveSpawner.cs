@@ -5,8 +5,6 @@ using UnityEngine;
 public class WaveSpawner : MonoBehaviour
 {
     public GameObject prefab;
-    //public float startTime;
-    //public float endTime;
     public float spawnRate;
     public float waveDuration;
     public float waveInterval;
@@ -16,8 +14,7 @@ public class WaveSpawner : MonoBehaviour
     void Start()
     {
         StartCoroutine(SpawnWaves());
-        //InvokeRepeating("Spawn", startTime, spawnRate);
-        //Invoke("CancelInvoke", endTime);
+
     }
     IEnumerator SpawnWaves()
     {
